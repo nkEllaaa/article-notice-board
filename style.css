@@ -20,7 +20,8 @@ body {
 }
 .wrap {
   width: 1080px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: auto;
 }
 header {
   padding: 100px 0;
@@ -59,10 +60,11 @@ header button {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  
+  justify-content: flex-start;
 }
 .article-wrap ul li {
   display: flex;
+  
 }
 article {
   background-color: #fff;
@@ -162,4 +164,18 @@ article .more-people .img-wrap img:nth-child(3) {
   position: absolute;
   right: 0;
   z-index: 30;
+}
+@media (max-width: 1099px) and ( min-width: 830px) {
+  li {
+    margin: auto;
+
+  }
+  li:nth-child(odd) {
+    margin-left: 100px;
+  }
+}
+@media (max-width:730px) {
+  li {
+    margin: auto;
+  }
 }
